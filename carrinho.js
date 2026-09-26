@@ -102,7 +102,7 @@ function finalizarCompra() {
 
     mensagem += `\nTotal: ${Number(total).toLocaleString()} MZN`;
 
-    const numeroWhatsApp = '258848743174'; // <- o teu número
+    const numeroWhatsApp = '258848743174'; // <- o número
     window.open(
         `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`,
         '_blank'
