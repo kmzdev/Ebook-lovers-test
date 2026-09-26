@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" type="image/png" href="./src/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Entrar — Ebook Lovers Manager</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <span class="logo-mark">📖</span>
+                <span>Ebook Lovers</span>
+            </a>
+        </nav>
+    </header>
+
+    <form id="form-login">
+        <h2>Área Restrita</h2>
+        <p class="form-subtitle">Acesso reservado aos administradores</p>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="O teu e-mail" required autocomplete="email">
+
+        <label for="password">Palavra-passe</label>
+        <input type="password" id="password" placeholder="A tua palavra-passe" required autocomplete="current-password">
+
+        <button type="submit">Entrar no sistema</button>
+
+        <p id="mensagem-erro"></p>
+
+        <a href="index.html">← Voltar para a loja</a>
+    </form>
+
+    <footer>
+        <p><a href="about.html"><b>&copy; Ebook Lovers 2026</b></a></p>
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="carrinho.html">Carrinho</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="login.js"></script>
+</body>
+</html>

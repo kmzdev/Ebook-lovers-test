@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" type="image/png" href="./src/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Adicionar Livro — Ebook Lovers</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <span class="logo-mark">📖</span>
+                <span>Ebook Lovers</span>
+            </a>
+            <ul id="Menu" class="nav-links" style="margin-left:auto;">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carrinho.html" class="nav-cart">🛒 <span id="contagem-carrinho">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="form-livro">
+            <h2>Adicionar Livro</h2>
+            <p class="form-subtitle">Publique um novo título na loja</p>
+
+            <label for="titulo">Título do livro</label>
+            <input type="text" id="titulo" placeholder="Ex: O Meu Livro" required>
+
+            <label for="autor">Nome do autor</label>
+            <input type="text" id="autor" placeholder="Ex: Autor Desconhecido" required>
+
+            <label for="preco">Preço (MZN)</label>
+            <input type="number" id="preco" step="0.01" min="0" placeholder="Ex: 500" required>
+
+            <label for="categoria">Categoria</label>
+            <input type="text" id="categoria" placeholder="Ex: romance, fantasia" required>
+
+            <label for="imagem-file">Capa do livro</label>
+            <input type="file" id="imagem-file" accept="image/*" required>
+
+            <button type="submit">Guardar Livro</button>
+
+            <p id="mensagem"></p>
+
+            <a href="index.html">← Voltar para a loja</a>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="about.html"><b>&copy; Ebook Lovers 2026</b></a></p>
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html">Admin</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

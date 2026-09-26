@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" type="image/png" href="./src/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>Carrinho — Ebook Lovers</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <span class="logo-mark">📖</span>
+                <span>Ebook Lovers</span>
+            </a>
+
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="input-pesquisa" placeholder="Pesquisar por título ou autor...">
+            </div>
+
+            <ul id="Menu" class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="carrinho.html" class="nav-cart">🛒 <span id="contagem-carrinho">0</span></a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+        </nav>
+    </header>
+
+    <section class="cart-page">
+        <h1>O seu carrinho</h1>
+        <p class="cart-subtitle">Reveja os livros antes de finalizar a encomenda.</p>
+
+        <div id="lista-carrinho"></div>
+
+        <div id="resumo-carrinho" class="cart-summary" style="display:none;">
+            <h3>Resumo do pedido</h3>
+            <p class="total" id="total-preco">0 MZN</p>
+            <button onclick="finalizarCompra()">Finalizar compra via WhatsApp</button>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="about.html"><b>&copy; Ebook Lovers 2026</b></a></p>
+        <div class="footer-links">
+            <a href="index.html">Início</a>
+            <a href="about.html">Sobre</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html">Admin</a>
+        </div>
+    </footer>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
